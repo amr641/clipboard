@@ -60,7 +60,7 @@ body {
 .register {
   padding: var(--main-padding) 0;
    min-height: 100vh ; 
-  background-image: url(../images/bg-intro-desktop.png);
+  background-image: url(bg-intro-desktop.png);
   background-size: cover;
   position: relative;
   animation: change-bg 13s linear infinite;
@@ -209,9 +209,9 @@ body {
 /* background animation  */
 @keyframes change-bg {
   0% , 100% {
-    background-image: url(../images/bg-intro-desktop.png);
+    background-image: url(bg-intro-desktop.png);
   }
   50% {
-    background-image: url(../images/pexels-pixabay-36717.jpg);
+    background-image: url(pexels-pixabay-36717.jpg);
   }
 }
