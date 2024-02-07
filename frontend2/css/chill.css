@@ -249,7 +249,9 @@ body {
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
-
+.work .heading p {
+    width: 66%;
+}
 .work .container  .work-data {
     width: 100%;
   display: grid;
@@ -274,17 +276,18 @@ body {
 
 }
 .work .container .work-images {
-    text-align: center;
-    margin-bottom: 50px;
+    margin: 40px 0;
+    translate: 80px 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(150px , 1fr));
+   gap: 40px;
     
 }
 .work .container .work-images img {
-    margin-left: 60px;
-    margin-bottom: 60px;
+   max-width: 100%;
+   
 }
-.work .heading p {
-    width: 66%;
-}
+
 .work .buttons {
     margin-top: 40px;
     display: flex;
@@ -335,17 +338,17 @@ body {
         width: fit-content;
     }
     .work .container .work-images {
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      translate: 0;
        
 
 }
 .work .container .work-images img {
-    margin-left: 0;
+   
+  width: 100px;
     
 }
 }
@@ -357,6 +360,7 @@ body {
     align-items: center;
     background-color: var(--footer);
     padding-top: 10px;
+    width: 100%;
     
 }
 .footer .logo img {
@@ -367,12 +371,17 @@ body {
     display: block;
     color: black;
     padding: 10px;
+    text-decoration: underline;
     
 }
+.footer .social{
+
+} 
 .footer .social img {
     margin-right: 25px;
     cursor: pointer;
 }
+
 @media (max-width:767px) {
     .footer {
         flex-direction: column;
