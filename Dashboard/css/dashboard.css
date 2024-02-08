@@ -120,8 +120,8 @@ body {
         gap: 10px;
     }
     .menu ul li a {
-        gap: 35px;
-        padding: 6px;
+        gap: 28px;
+        padding:10px 20px;
     }
 
 
@@ -210,4 +210,9 @@ thead th {
     font-weight: 600;
     padding: 4px;
     border-radius: 4px;
+ }
+ @media (max-width:767px){
+    table {
+        height:calc(100% - 100px) ;
+    }
  }
